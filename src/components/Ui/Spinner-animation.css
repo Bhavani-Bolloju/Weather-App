@@ -1,0 +1,14 @@
+.rotate {
+  font-size: 2.5rem;
+  animation: 1s linear infinite spinner;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

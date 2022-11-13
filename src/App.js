@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+
+import "./App.css";
+import CurrentWeather from "./components/CurrentWeather";
+import DailyWeather from "./components/DailyWeather";
+import HourlyWeather from "./components/HourlyWeather";
 
 function App() {
+  const [coords, setCoords] = useState(null);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      function (location) {
+        const { latitude: lat, longitude: lon } = location?.coords;
+        setCoords({ lat: lat, lon: lon });
+      },
+      () => {
+        console.log("failed to get coords");
+      }
+    );
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col gap-3">
+      <CurrentWeather coords={coords} />
+      <HourlyWeather coords={coords} />
+      <DailyWeather coords={coords} />
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.expand {
+  display: "block";
+  opacity: 0.5;
+}
+.expand-enter-active {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+.expand-exit-active {
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.expand-exit {
+  display: none;
+  opacity: 1;
+}
