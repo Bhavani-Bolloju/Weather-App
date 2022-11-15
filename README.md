@@ -1,7 +1,7 @@
 ## What is it about?
 
 *A fully responsive Weather App created using Openweather api to render current,daily and hourly weather details* <br/>
-*Created using React js, tailwind, custom hooks to fetch data from API.*
+*Created using React js, tailwind, RTK Query to fetch data from API.*
 
 ## Project (Screen-shorts)
 
