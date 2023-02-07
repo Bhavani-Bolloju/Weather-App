@@ -18,23 +18,12 @@ body {
   background: linear-gradient(to bottom right, #0f3443, #34e89e);
   color: #dcecf2df;
   font-size: 1.6rem;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   max-height: fit-content;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  /* font-family: "Helvetica Neue"; */
-  max-width: 80%;
+  max-width: 70%;
   padding: 5rem 0;
   margin: auto;
 }
-
-/* @media screen and (max-width: 710px) {
-  html {
-    font-size: 58%;
-  }
-  body {
-    width: 90%;
-    margin: auto;
-  }
-} */

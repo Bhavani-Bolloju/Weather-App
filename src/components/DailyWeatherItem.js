@@ -28,7 +28,7 @@ function DailyWeatherItem(props) {
 
   return (
     <div
-      className="flex rounded-lg md:py-[20px] py-[10px] px-3   bg-slate-50/10 gap-3"
+      className="flex rounded-lg md:py-8 py-8 px-8   bg-slate-50/10 gap-5"
       onClick={onExpand}
     >
       <div className="flex flex-col text-center leading-none md:min-w-[130px] min-w-[100px] cursor-pointer ">
@@ -48,6 +48,7 @@ function DailyWeatherItem(props) {
       <AnimatePresence>
         {isExpand && (
           <motion.div
+            className="flex flex-col gap-2"
             initial={{ opacity: 0 }}
             transition={{ delay: 0.2 }}
             animate={{ opacity: 1 }}
