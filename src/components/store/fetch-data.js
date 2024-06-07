@@ -41,7 +41,7 @@ export const weatherApi = createApi({
   }),
 });
 
-export const { useGetCurrentweatherQuery } = weatherApi;
-export const { useGetHourlyWeatherQuery } = weatherApi;
-export const { useGetDailyWeatherQuery } = weatherApi;
-export const { useGetGeoLocationQuery } = weatherApi;
+export const { useGetCurrentweatherQuery,useGetHourlyWeatherQuery,useGetDailyWeatherQuery,useGetGeoLocationQuery } = weatherApi;
+// export const {  } = weatherApi;
+// export const {  } = weatherApi;
+// export const {  } = weatherApi;
